@@ -20,14 +20,6 @@ function getTopStories(){
      }
      return topTenUrls;
   })
-  // .then(titles =>{
-  //   var topTitles = [];
-  //   for(var i=0;i<10;i++){
-  //     //console.log(titles[i]);
-  //     topTitles.push(titles[i]);
-  //   }
-  //   return topTitles;
-  // })
   .catch(error => {
      console.log('There was an error: ', error);
   });
@@ -54,14 +46,9 @@ function callFetch(Ids,i){
     console.log(urlCount);
     //document.write('<a href="' + test + '">Open here</a>');
     document.getElementById(urlCount).innerHTML = titles[i];
-    //document.getElementById("topTenTitles1").innerHTML = titles[1];
     document.getElementById("topTenScores").innerHTML = score;
     document.getElementById("topTenAuthors").innerHTML = authors;
-    //document.getElementById("topTenUrls").innerHTML = urls;
     document.getElementById(urlCount).href = urls[i];
-    //document.getElementById("topTenUrls1").href = urls[0]; 
-    //document.getElementById("topTenUrls2").href = urls[1]; 
-    //document.getElementById("xxx").href = test;
     return data.title
   })
 }
