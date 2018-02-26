@@ -29,7 +29,6 @@ var titles =[];
 var score = [];
 var authors = [];
 var urls = [];
-
 var urlCount = [];
 
 function callFetch(Ids,i){
@@ -61,23 +60,6 @@ getTopStories(true).then(function (topIds){
     }
   });
 
-
-
-
-function ColorBlock() {
-  let styles = {
-    margin: '20px',
-    width: '250px',
-    height: '250px',
-    backgroundColor: 'yellow',
-  };
-  return (
-    <div>
-      <div className="yellow-box" style={styles}>
-      </div>
-    </div>
-  )
-}
 // Promise.all([
 //   window.fetch("https://hacker-news.firebaseio.com/v0/item/16459096.json?print=pretty"),
 //   window.fetch("https://hacker-news.firebaseio.com/v0/item/16458970.json?print=pretty"),
@@ -90,11 +72,6 @@ function ColorBlock() {
 // }).catch((err) => {
 //     console.log(err);
 // });
-
-
-
-
-
 
 class App extends Component {
   render() {
